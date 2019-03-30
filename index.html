@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <title>National Parks</title>
+</head>
+<body>
+    <h1>Spearch Parks in your Area</h1>
+
+    <form>
+        <label for='seach-state'>Enter a State</label>
+        <input type='text' name='search-state' id='js-search-state' placeholder="EX: Ga" required>
+
+        <label for='max-results'>Maxium results to list</label>
+        <input type='number' name='max-results' id='js-max-results' value='10' min="1" max='50'>
+
+        <input type='submit' value='Search'>
+    </form>
+
+    <p id="js-error-message" class="error-message"></p>
+    <section id="results" class="hidden">
+        <h2>Search results</h2>
+        <ul id="results-list">
+        </ul>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
